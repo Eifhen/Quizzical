@@ -1,0 +1,372 @@
+
+/************************************
+
+        [ INDEX ]
+
+       I- Background & Text-Color Management
+      II- Width and Height Management
+     III- Button Management
+      IV- Box Management
+       V- ScrollBar Manipulation
+      VI- Border Manipulation
+     VII- List's
+    VIII- Quiz Styles
+
+*************************************/
+:root {
+    --black-night: #2B283A;
+    --white: #faf0e6;
+    --whiter:#F5F7FB;
+    --slider-text:white;
+    --blue-royal:#293264;
+    --blue-crown:#4D5B9E;
+    --yellow-blob:#FFFAD1;
+    --blue-blob:#DEEBF8;
+}
+
+body{
+    /* font-family: 'Inter' , sans-serif !important; */
+    font-family: 'Karla', sans-serif;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+
+/************************************
+I - Background & Text-Color Management
+*************************************/
+
+.bg-react-nav{
+    background-color:#21222A;
+}
+
+.bg-react-page{
+    background-color:#282D35;
+}
+
+.bg-purple-gradient{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.bg-blue-gradient{
+    background: linear-gradient(90deg, #194a8d 1.18%, #75c0e0 100%);
+}
+
+.bg-dark-gradient{
+    background: linear-gradient(90deg, #212529 1.18%, #495057 100%);
+}
+
+.bg-purple{
+    background-color:#A626D3;
+}
+
+.bg-blue{
+    background-color:#194a8d !important;
+}
+
+.bg-darker{
+    background-color: #1A1B21 !important;
+}
+
+.bg-darker-dark{
+    background-color:#161619;
+}
+
+.bg-dark-night{
+    background-color:#23252C;
+}
+
+.bg-orange{
+    background-color:orange;
+}
+
+.bg-dark-green{
+    background-color:#0B2434;
+}
+
+.bg-whites{
+    background-color:#f5f5f5;
+}
+
+.bg-whiter{
+    background-color:var(--whiter);
+}
+.bg-dice-active{
+    /* #59E391 */
+    background-color: #fecf6a;
+}
+
+.bg-blue-royal{
+    background-color:var(--blue-royal) !important;
+}
+
+.bg-blue-crown{
+    background-color:var(--blue-crown) !important;
+}
+
+.bg-yellow{
+    background-color:#fecf6a;
+}
+
+.text-blue-royal{
+    color:var(--blue-royal) !important;
+}
+
+.text-whiter{
+    color:var(--whiter) !important;
+}
+.text-yellow{
+    color: #fecf6a;
+}
+
+.text-red-wine{
+    color:#df1c44;
+}
+/************************************
+II - Width and Height Management
+*************************************/
+.h-full{
+    height:100vh;
+}
+
+.h-min-full{
+    height:100vh;
+}
+
+.h-min-800{
+    min-height: 800px;
+}
+
+.h-min-700{
+    min-height: 700px;
+}
+
+.h-min-600{
+    min-height: 600px;
+}    
+
+.h-min-540{
+    min-height: 540px;
+}
+
+.h-min-500{
+    min-height: 500px;
+}
+
+.h-min-480{
+    min-height: 480px;
+}
+
+.h-min-450{
+    min-height: 450px;
+}
+
+.h-min-400{
+    min-height: 400px;
+}
+
+.h-min-300{
+    min-height: 300px;
+}
+
+.h-min-200{
+    min-height:200px;
+}
+
+.h-min-150{
+    min-height:150px;
+}
+
+.h-min-100{
+    min-height:100px;
+}
+
+.h-min-80{
+    min-height:80px;
+}
+
+.h--450{
+    height:450px;
+}
+
+.h--400{
+    height:400px;
+}
+
+.h--300{
+    height:300px;
+}
+
+.h--200{
+    height:200px;
+}
+
+
+.h--100{
+    height:100px;
+}
+
+.w-max-1000{
+    max-width:800px;
+}
+
+.w--auto{
+    width:auto;
+}
+
+@media(max-width:1000px){
+    .w--auto{
+        width:100%;
+    }
+}
+
+/************************************
+III - Button Management
+*************************************/
+
+.clicked{
+    background-color:gray !important;
+    color:white;
+}
+
+/************************************
+IV - Box Management
+*************************************/
+.fruit-box{
+    max-height:200px;
+    overflow-y:visible;
+    overflow-y: auto;
+}
+
+.circle{
+    height:100px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/***********************************
+V - ScrollBar Manipulation
+***********************************/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: #343a40;  */
+    background:#495057 ;
+    border-radius: 20px;
+}
+
+/***********************************
+VI - Border Manipulation
+***********************************/
+.border-pill{
+    border-radius: 50rem;
+}
+
+/***********************************
+VII - List's
+***********************************/
+.list-style > li{
+    /*    color:#00D8FF;*/
+    font-family: 'Inter', sans-serif !important;
+    line-height:19px;
+    padding-block:10px;
+}
+
+.list-style > li::marker{
+    color:#61DAFB;
+    font-size:1.4rem;
+}
+
+/***********************************
+VIII - Quiz Styles
+***********************************/
+.quiz-title{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 37px;
+    color: var(--blue-crown);
+}
+
+.quiz-subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #293264;
+}
+
+.quiz-question{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+    color: #293264;
+}
+
+.quiz-btn-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.quiz-yellow-blob{
+    position: absolute !important;
+    width: 190px;
+    height: 200px;
+    right:0;
+    margin:0;
+    background-image:url('../images/blobs-yellow.png');
+    background-repeat: no-repeat;
+}
+
+.quiz-blue-blob{
+    position: absolute !important;
+    width: 190px;
+    height: 110px;
+    bottom:0px;
+    left:0;
+    margin:0 !important;
+    padding:0 !important;
+    background-image:url('../images/blobs-blue.png');
+    background-repeat: no-repeat;
+}
+
+.quizzical-brand{
+    color:var(--blue-crown) !important;
+    position:absolute;
+    left:1.5%;
+    top:4%;
+}
+
+
+@media(max-width:770px){
+
+    .quizzical-brand{
+        display: none;
+    }
+
+    .quiz-blue-blob{
+        display:none;
+    }
+    
+    .quiz-yellow-blob{
+        display:none;
+    }
+}
+
+/***********************************/
